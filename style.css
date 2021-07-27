@@ -1,32 +1,48 @@
-.flex-container {
-	/* We first create a flex layout context */
-	display: flex;
-
-	/* Then we define the flow direction 
-       and if we allow the items to wrap 
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
-	flex-flow: row wrap;
-
-	/* Then we define how is distributed the remaining space */
-	justify-content: space-around;
-
-	padding: 0;
-	margin: 0;
-	list-style: none;
+/* Left Box */
+body {
+	background-color: black;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
-.flex-item {
-	background: tomato;
-	padding: 5px;
-	width: 200px;
-	height: 150px;
-	margin-top: 10px;
-	line-height: 150px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
+#leftBox {
+	width: 441px;
+	height: 490px;
+	background-color: white;
+}
+
+#topLeft-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+
+#logo {
+	width: 149px;
+	height: 149px;
+}
+
+#text {
+	width: 245px;
+	height: 212px;
+	margin: 0px;
+	
+	text-align: justify;
+	font-size: 13px;
+}
+
+#h1Tf {
+	margin: 0px;
+}
+
+#foot-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+}
+
+#text-middle {
+	padding-left: 15px;
 }
